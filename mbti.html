@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 식단 MBTI</title>
+    <!-- Fabicon only -->
+    <link rel="favicon" href="/img/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/share.css">
+    <!-- <link rel="stylesheet" href="/css/button.css"> -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/qna.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="/css/result.css">
+    <link rel="stylesheet" href="/css/progress.css">
+    <!-- Font only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <section id="main" class="mx-auto my-5 mb py-5 px-3">
+            <h1> 나에게 딱 !! <br> 맞는 식단 유형은?</h1>
+            <div class="col-lg-6 col-md-8 col-sm-10 col-12  mx-auto">
+                <img src="/img/supermeme_13h46_32.gif" alt="main_image" class="img-fluid my-3">
+            </div>
+            <p class="mt-3">
+                당신에게 맞는 식단 유형은? <br>
+                아래 시작하기 버튼을 눌러 <br> 테스트를 시작해보세요!
+            </p>
+            <button type="button" class="btn btn-outline-danger mt-3" onclick="js:begin()">시작하기</button>
+        </section>
+
+        <section id="qna">
+            <!-- <div class="container">
+                <div class="progress-wrapper">
+                    <div class="progress" id="progress"></div>
+                    <div class="circle active">1</div>
+                    <div class="circle">2</div>
+                    <div class="circle">3</div>
+                    <div class="circle">4</div>
+                </div>
+                <button class="btn" id="prev" disabled>Prev</button><button class="btn" id="next">Next</button>
+            </div> -->
+            <div class="status mx-auto mt-5">
+                <div class="statusBar">
+                </div>
+            </div>
+            <div class="qbox my-5 py-3 mx-auto">
+            </div>
+            <div class="answerbox my-3">
+            </div>
+        </section>
+
+        <section id="result" class="mx-auto my-5 mb py-5 px-3">
+            <h1>당신의 결과는?!</h1>
+            <div class="resultName">
+            </div>
+            <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12  mx-auto">
+                <img src="/img/supermeme_13h46_32.gif" alt="main_image" class="img-fluid">
+            </div>
+            <div class="resultDesc">
+            </div>
+        </section>
+
+        <div class="icons">
+            <a href="#" class="icon icon--kakaotalk" onclick="js:shareKakao()">
+                <i class="ri-kakao-talk-line"></i>
+            </a>
+            <a href="#" class="icon icon--instagram" onclick="">
+                <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="icon icon--twitter" onclick="js:shareTwitter()">
+                <i class="ri-twitter-line"></i>
+            </a>
+            <a href="#" class="icon icon--share" onclick="js:copyText()">
+                <i class="ri-share-line"></i>
+            </a>
+        </div>
+
+        <script src="/js/data.js" charset="UTF-8"></script>
+        <script src="/js/share.js" charset="UTF-8"></script>
+        <script src="/js/start.js" charset="UTF-8"></script>
+        <script src="/js/progress.js" charset="UTF-8"></script>
+    </div>
+</body>
+
+</html>

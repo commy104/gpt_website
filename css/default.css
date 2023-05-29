@@ -1,0 +1,11 @@
+body {
+    background-color: lightgreen;
+}
+
+body h1 {
+    font-family: 'NanumSquareNeoHeavy';
+}
+
+* {
+    font-family: 'NanumSquareNeo';
+}
